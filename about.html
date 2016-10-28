@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Causes Bootstrap Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+ <style>
+#dialogoverlay{
+  display: none;
+  opacity: .8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #FFF;
+  width: 100%;
+  z-index: 10;
+}
+#dialogbox{
+  display: none;
+  position: fixed;
+  background: #000;
+  border-radius:7px; 
+  width:550px;
+  z-index: 10;
+}
+#dialogbox > div{ background:#FFF; margin:8px; }
+#dialogbox > div > #dialogboxhead{ background: #666; font-size:19px; padding:10px; color:#CCC; }
+#dialogbox > div > #dialogboxbody{ background:#333; padding:20px; color:#FFF; }
+#dialogbox > div > #dialogboxfoot{ background: #666; padding:10px; text-align:right; }
+</style>
+
+<!--JavaScript Dialog Pop Up Box -->
+<script src="js/dialog.js"></script>
+<!-- End of JavaScript Dialog Pop Up Box -->
+
+</head>
+<body>
+<!--navigation bar -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+    <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+          </button>
+          <a href="index.html"><img src="images/logo_petcare_sm.png"></a>
+    </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav nav-pills navbar-right">
+      <li role="presentation"><a href="index.html">Home</a></li>
+        <li class = "dropdown">
+            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+               Services
+               <b class = "caret"></b>
+            </a>
+            
+            <ul class = "dropdown-menu">
+                              
+               <li><a href = "services.html">Pet Services</a></li>
+
+               <li class = "divider"></li>
+               <li><a href = "grooming.html">Pet Sitting</a></li>
+               
+               <li class = "divider"></li>
+               <li><a href = "grooming.html">Pet Grooming</a></li>
+
+               <li class = "divider"></li>
+               <li><a href = "training.html">Pet Training</a></li>
+            </ul>
+         </li>
+          <li class = "dropdown">
+            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+               About
+               <b class = "caret"></b>
+            </a>
+            
+            <ul class = "dropdown-menu">
+
+               <li><a href = "about.html">About Us</a></li>
+                 
+               <li class = "divider"></li>              
+               <li><a href = "history.html">Our History</a></li>
+               
+               <li class = "divider"></li>
+               <li><a href = "vision.html">Our Vision</a></li>
+            </ul>
+          </li>
+        <li role="presentation"><a href="adopt.html">Adopt</a></li>
+        <li role="presentation"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+<div class="container-fluid">
+   <div class="row">
+  <img src="images/about_pet.jpg" class="img-responsive">
+   </div>
+</div>
+
+
+<!-- Call To Action Section-->
+<div id="call-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+              <button type="button" class="btn btn-default">Cat</button>
+              <button type="button" class="btn btn-default">Dog</button>
+              <input type="text" placeholder="City or Zip Code"/>
+      </div>
+            <div class="col-md-6">
+                <div class="search_btn">
+                  <input type="search" class="btn btn-warning" value="Search">
+                </div>
+            </div>
+    </div>    
+  </div>  
+  </div>
+
+  <!--Header for Petcare Co. Numbers-->
+<div class="container">
+  <h1>The Petcare Co. By The Numbers</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius malesuada eros sed sagittis. Aenean id posuere justo. Sed sem mauris, ornare nec justo ut, maximus convallis ipsum. Proin a tortor laoreet turpis placerat mollis ac non libero. Aenean in finibus ligula. Duis vulputate eros vel auctor ullamcorper. Nullam eros mauris, vulputate in lectus eu.</p> 
+</div>
+
+<!-- Wrapper for Pet Number Services Snippet Content -->
+<div class="container">
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail" style="border: none;">
+      <img src="images/rescue.png" alt="...">
+      <div class="caption">
+        <h3>1,000</h3>
+        <p>Animals Rescued or Assisted</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail" style="border: none;">
+      <img src="images/medical.png" alt="...">
+      <div class="caption">
+        <h3>900</h3>
+        <p>Medical Vaccinations and Surgeries</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail" style="border: none;">
+      <img src="images/home.png" alt="...">
+      <div class="caption">
+        <h3>800</h3>
+        <p>Adoptions from the Pet Adoption Center</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Dialog Box for Donation Button -->
+<div id="dialogoverlay"></div>
+<div id="dialogbox">
+  <div>
+    <div id="dialogboxhead"></div>
+    <div id="dialogboxbody"></div>
+    <div id="dialogboxfoot"></div>
+  </div>
+</div>
+
+   <!-- Call to Action Donation Above Footer -->
+   <div class="container-fluid">
+    <div class="row">
+    <div class="donate text-center">
+       <div class="caption">
+          <h2>Help Pets Find Homes</h2>
+           <button type="button" class="btn btn-warning btn-lg" onclick="Alert.render('Confirm with the ok button.')">DONATE</button>
+       </div>
+    </div>
+</div>
+</div>
+<!-- End of to Action Donation Above Footer -->
+
+
+    <!-- Start of the Footer -->
+    <footer class="site-footer">
+    	<div class="container">
+    		<div class="row">
+        <a href="">
+          <img src="images/logo_petcare_co_white.png" alt="" class="center-block img-responsive">
+        </a>
+    	     <ul class="footer-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="adopt.html">Adopt</a></li>
+              <li><a href="contact.html">Contact</a></li>
+           </ul>
+           <p>@ Copyright Privacy Policy 2016. To Help Rescue and Find Shelters for Animals. All rights reserved.<br>PetCare Co. is a non-for-profit organization.</p>
+           <div class="follow-block">
+             <a href="#"><i class="fa fa-facebook-official fa-3x" aria-hidden="true" style="color:white;"></i></a>
+             <a href="#"><i class="fa fa-twitter-square fa-3x" aria-hidden="true" style="color:white;"></i></a>
+             <a href="#"><i class="fa fa-pinterest-square fa-3x" aria-hidden="true" style="color:white;"></i></a>
+             <a href="#"><i class="fa fa-google-plus-square fa-3x" aria-hidden="true" style="color:white;"></i></a>
+             <a href="#"><i class="fa fa-vimeo-square fa-3x" aria-hidden="true" style="color:white;"></i></a>
+             <a href="#"><i class="fa fa-youtube-square fa-3x" aria-hidden="true" style="color:white;"></i></a>
+           </div>
+    		</div>
+    		<div class="bottom-footer">
+          <h4>Our Partnerships</h4>
+          <div class="col-md-6">
+          <a href="#">
+            <img src="images/pet_partners.png"   alt="" class="center-block img-responsive">
+          </a>
+          </div>
+          <div class="col-md-6">
+          <a href="#">
+            <img src="images/pets_on_move.png"  alt="" class="center-block img-responsive">
+          </a>
+          </div>
+    		</div>
+    </footer>
+     <!-- End of the Footer -->
+		
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

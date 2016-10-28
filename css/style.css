@@ -1,0 +1,117 @@
+/* remove gap between navbar and carousel homeslide section */
+.navbar { 
+	margin-bottom:0px !important; 
+}
+
+/* Donate CTA section */
+.donate{
+	background:url("../images/donate_cta.jpg");
+	padding:100px;
+	background-repeat: no-repeat;
+	margin-bottom: -80px; /* removes gap between donate cta and footer*/
+}
+
+/* text and text height alignemnt */
+h1, h3, h4, p{
+text-align: center;
+}
+
+h1{
+	padding: 20px;
+}
+
+h2{
+	color: #fff;
+
+}
+
+/* City or Zipcode Input Button */
+input[type=text] {padding:5px; border:2px solid #ccc; 
+-webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type=text]:focus {border-color:#333; }
+
+/* remove gap between jumbotron and image underneath jumbotron */
+.jumbotron { 
+	margin-bottom:0px !important; 
+}
+
+
+/* call to action section */
+#call-section {
+	background: #555459;
+	padding: 40px 0 5px;
+}
+
+.search_btn{
+    text-align: right;
+    color: #fff;
+}
+
+
+.btn-default {
+  background-color: transparent;
+  border-color: #ccc;
+  color: #fff;
+}
+
+
+/* clients logo section */
+.clients{
+	text-align: center;
+	padding: 50px 30px 50px 80px;
+}
+
+.copy-caption{
+	position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
+
+
+/* footer section */
+.site-footer{
+	background-color: #555459;
+	color: #fff;
+	margin-top: 30px;
+	padding-top: 30px;
+}
+
+.bottom-footer{
+	border-top: 1px solid #b2b2b2;
+	margin-top: 10px;
+	padding-top: 10px;
+	color: #b2b2b2;
+	text-align: center;
+}
+
+.footer-nav{
+	text-align: center;
+	list-style: none;
+}
+
+.footer-nav li{
+	display: inline;
+	padding: 0px 10px;
+}
+
+
+.footer-nav a{
+	color: #fff;
+	font-size: 1.5em;
+}
+
+.footer-nav a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/* social media links in footer section */
+.follow-block{
+	text-align: center;
+	color: #fff !important;
+
+}
